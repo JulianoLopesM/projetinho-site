@@ -1,48 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desvendando a Tecnologia</title>
     <link rel="stylesheet" href="Desvendando-a-tecnologia/Css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="Desvendando-a-tecnologia/JS/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Desvendando-a-tecnologia/JS/script.js" defer></script>
 </head>
 <body>
-    <div class="header">
-       
-        <h1><img src="Desvendando-a-tecnologia/img/pc.png" alt="icone" class="icon">Desvendando a Tecnologia</h1>
-        <p id="subtitle">Desvende a tecnologia com o nosso guia de informática básica<br>Aqui você aprenderá o suficiente para não ficar perdido ao mexer em um computador em 2023.</p>
-        <p id="text">Aqui está a lista que você deve seguir no nosso guia:</p>
-        <ul>
-            <li><a href="Desvendando-a-tecnologia/Páginas/informatica.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-desktop"></i>Porque aprender informática?</a></li>
-            <li><a href="Desvendando-a-tecnologia/Páginas/internet.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i>Internet</a></li>
-            <li><a href="Desvendando-a-tecnologia/Páginas/software.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i>Software</a></li>
-            <li class="expandable">
-                
-                <a href="Desvendando-a-tecnologia/Páginas/hardware/hardware.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-microchip"></i>Hardware</a>
-                <button class="toggle-button"><i class="fa-solid fa-arrow-down"></i></button>
-                <ul>
-                    <li><a href="Desvendando-a-tecnologia/Páginas/hardware/placamae.html" target="_blank" rel="noopener noreferrer"><img src="../img/motherboard.png"  alt="" srcset="">Placa Mãe</a></li>
-                    <li><a href="Desvendando-a-tecnologia/Páginas/hardware/processador.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-microchip"></i>Processadores </a></li>
-                    <li><a href="Desvendando-a-tecnologia/Páginas/hardware/placadevideo.html" target="_blank" rel="noopener noreferrer"><img src="../img/placa-de-video.png" alt="" srcset="">Placa de Vídeo</a></li>
-                    <li><a href="Desvendando-a-tecnologia/Páginas/hardware/memoria.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-memory"></i>Memória</a></li>
-                    <li><a href="Desvendando-a-tecnologia/Páginas/hardware/hd.html" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-hard-drive"></i>HD</a></li>
-                    <li><a href="Desvendando-a-tecnologia/Páginas/hardware/fonte.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-car-battery"></i>Fontes</a></li>
-                    <li><a href="Desvendando-a-tecnologia/Páginas/hardware/teclado.html" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-keyboard"></i>Teclados</a></li>
-                    <li><a href="Desvendando-a-tecnologia/Páginas/hardware/mouse.html"target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-computer-mouse"></i>Mouses</a></li>
-                    <li><a href="Desvendando-a-tecnologia/Páginas/hardware/usb.html"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-usb"></i>Dispositivos</a></li>
-                    <!-- Adicione outros itens de hardware aqui -->
-                </ul>
-            </li>
-            <li><a href="Desvendando-a-tecnologia/Páginas/nuvem.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-cloud"></i>Nuvem</a></li>
-            <li><a href="Desvendando-a-tecnologia/Páginas/seguranca.html"target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-lock"></i>Segurança</a></li>
-            <li><a href="Desvendando-a-tecnologia/Páginas/windows-basico.html" rel="noopener noreferrer"><i class="fa-brands fa-windows"></i>Windows Básico</a></li>
-        </ul>
-    </div>
-    <p class="porfavor">Para melhor experiência visual, por favor, abaixe ou aumente o zoom da página, basta clicar "ctrl" + "+"  ou "ctrl" + "-"</p>
+    <header>
+        <h1><img src="Desvendando-a-tecnologia/img/pc.png" alt="Ícone" class="icon">Desvendando a Tecnologia</h1>
+        <p id="subtitle">Desvende a tecnologia com o nosso guia de informática básica.<br>Aqui você aprenderá o suficiente para não ficar perdido ao mexer em um computador em 2024.</p>
+    </header>
+    <main>
+        <section>
+            <p id="text">Aqui está a lista do que você aprenderá no nosso guia:</p>
+            <ul class="guide-list">
+                <li>
+                    <a href="Desvendando-a-tecnologia/Páginas/informatica.html" >
+                        <i class="fa-solid fa-desktop"></i> Por que aprender informática?
+                    </a>
+                </li>
+                <li>
+                    <a href="Desvendando-a-tecnologia/Páginas/internet.html" >
+                        <i class="fas fa-globe"></i> Internet
+                    </a>
+                </li>
+                <li>
+                    <a href="Desvendando-a-tecnologia/Páginas/software.html" >
+                        <i class="fa-solid fa-code"></i> Software
+                    </a>
+                </li>
+                <li class="expandable">
+                    <a href="Desvendando-a-tecnologia/Páginas/hardware/hardware.html" >
+                        <i class="fa-solid fa-microchip"></i> Hardware
+                    </a>
+                    <button class="toggle-button"><i class="fa-solid fa-arrow-down"></i></button>
+                    <ul>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/placamae.html" ><i class="fa-solid fa-microchip"></i> Placa Mãe</a></li>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/processador.html" ><i class="fa-solid fa-microchip"></i> Processadores</a></li>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/placadevideo.html" ><i class="fa-solid fa-desktop"></i> Placa de Vídeo</a></li>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/memoria.html" ><i class="fa-solid fa-memory"></i> Memória</a></li>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/hd.html" ><i class="fa-regular fa-hard-drive"></i> HD</a></li>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/fonte.html" ><i class="fa-solid fa-car-battery"></i> Fontes</a></li>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/teclado.html" ><i class="fa-regular fa-keyboard"></i> Teclados</a></li>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/mouse.html" ><i class="fa-solid fa-computer-mouse"></i> Mouses</a></li>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/usb.html" ><i class="fa-brands fa-usb"></i> Dispositivos USB</a></li>
+                        <!--
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/monitores.html" target="_blank"><i class="fa-solid fa-tv"></i> Monitores</a></li>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/caixasdesom.html" target="_blank"><i class="fa-solid fa-volume-high"></i> Caixas de Som</a></li>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/coolers.html" target="_blank"><i class="fa-solid fa-fan"></i> Coolers</a></li>
+                        <li><a href="Desvendando-a-tecnologia/Páginas/hardware/gabinetes.html" target="_blank"><i class="fa-solid fa-box"></i> Gabinetes</a></li>
+                        -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="Desvendando-a-tecnologia/Páginas/nuvem.html" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-cloud"></i> Nuvem
+                    </a>
+                </li>
+                <li>
+                    <a href="Desvendando-a-tecnologia/Páginas/seguranca.html" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-lock"></i> Segurança
+                    </a>
+                </li>
+                <li>
+                    <a href="Desvendando-a-tecnologia/Páginas/windows-basico.html" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-windows"></i> Windows Básico
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
     <footer>
-        <!-- Rodapé da página -->
-        <p class="final">&copy; 2023 Desvendando a Tecnologia</p>
+        <p class="final">&copy; 2024 Desvendando a Tecnologia</p>
     </footer>
 </body>
 </html>
