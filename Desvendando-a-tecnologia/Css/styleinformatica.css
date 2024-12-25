@@ -14,7 +14,7 @@ h1 {
     margin: 0;
     padding: 10px 0;
     -webkit-text-stroke: 2px black; /* Contorno preto */
-    text-stroke: 2px black; /* Contorno preto */
+    
 }
 .icon {
     width: 60px; /* Ajuste o tamanho do ícone conforme necessário */
@@ -36,10 +36,12 @@ h1 {
 .content1, .content2, .content3, .content4 , .content5 , .content6 , .content7 , .content8 {
     margin-left: 300px;
     text-align: justify;
+    font-size: 22px;
 }
 .list{
     margin-left: 275px;
     text-align: justify;
+    font-size: 22px;
 }
 .final{
     position: fixed;
