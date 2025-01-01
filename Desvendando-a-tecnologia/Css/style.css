@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');  
+
 @media screen and (min-width: 768px) {
     /* Coloque seus estilos para desktop aqui */
 }
@@ -10,7 +13,7 @@
 
 /* CSS para o título na página inicial */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     background-color: #f0f0f0; /* Cor de fundo suave */
     background-size: cover; /* Cobrir todo o espaço do body com a imagem */
@@ -19,9 +22,10 @@ body {
     
 }
 
-#teste{
+#oficial{
     
         font-size: 30px; /* Ajuste o tamanho da fonte conforme necessário */
+        font-family: 'Roboto', sans-serif ;
         color: white; /* Verde */
         background-color: #00cc66;
         text-align: center;
