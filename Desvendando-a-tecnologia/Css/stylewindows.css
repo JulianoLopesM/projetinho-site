@@ -25,18 +25,12 @@ header {
     padding: 20px 0;
 }
 
-header h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-header #icon {
+#icon {
     height: 40px;
     margin-right: 10px;
+    vertical-align: middle;
 }
+
 
 /* Container principal */
 main {
