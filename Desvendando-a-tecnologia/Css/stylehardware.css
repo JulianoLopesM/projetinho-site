@@ -1,33 +1,59 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f0f0f0; /* Cor de fundo suave */
-    background-size: cover; /* Cobrir todo o espaço do body com a imagem */
-    font-size: 16px; /* Tamanho da fonte padrão */
-    color: #333; /* Cor do texto principal */
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
 }
-h1 {
-    font-size: 60px; /* Ajuste o tamanho da fonte conforme necessário */
-    color: white; /* Verde */
+header {
     background-color: #00cc66;
+    color: white;
     text-align: center;
-    margin: 0;
-    padding: 10px 0;
-    -webkit-text-stroke: 2px black; /* Contorno preto */
-    text-stroke: 2px black; /* Contorno preto */
+    padding: 20px 0;
 }
-.title{
-    margin-left: 320px;
-    font-size: 40px;
+#icon {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
-.content1, .content2, .content3, .content4{
-    margin-left: 300px;
+main {
+    max-width: 800px;
+    max-height: 750px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    color: #00cc66;
+}
+#content1, #content2 {
     text-align: justify;
+    margin: 10px 20px;
 }
-.hardware{
-    margin-left: 500px;
+.container {
+    text-align: center; /* Centraliza horizontalmente */
+    
 }
+.images {
+    width: 380px;
+    height: 240px;
+    display: inline-block; /* Garante que a imagem respeite o alinhamento */
+    margin-top: 10px;
+}
+
 .icon {
     width: 60px; /* Ajuste o tamanho do ícone conforme necessário */
     position: absolute; /* Posiciona o ícone de forma absoluta */
@@ -41,7 +67,7 @@ h1 {
     bottom: 0;
     right: 0;
     margin: 0;
-    text-align: right;
+    text-align: center;
     padding: 10px 20px;
     background-color: #00cc66;
     color: rgb(247, 242, 0);
