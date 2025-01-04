@@ -32,6 +32,7 @@ header {
 
 main {
     max-width: 800px;
+    max-height: 835px;
     margin: 20px auto;
     padding: 10px;
     background-color: #fff;
