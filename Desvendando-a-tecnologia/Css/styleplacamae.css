@@ -18,16 +18,6 @@ header {
     text-align: center;
     padding: 20px 0;
 }
-#icon {
-    height: 40px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-h1 {
-    display: inline-block;
-    font-size: 2rem;
-    margin: 0;
-}
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -36,12 +26,34 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
 }
+article {
+    margin-bottom: 20px;
+}
+h1 {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0;
+}
+#icon {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
 .title {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     text-align: center;
     margin: 20px 0;
     color: #00cc66;
+}
+.titleTwo, .titleThree, .titleFour, .titleFive{
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
 }
 #content1, #content2, #content3, #content4, #content5, #content6 {
     text-align: justify;
@@ -59,38 +71,26 @@ main {
     margin-left: 22px ;
     
 }
-article {
-    margin-bottom: 20px;
-}
-h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-.titleTwo, .titleThree, .titleFour, .titleFive{
-    text-align: left;
-    font-size: 25px;
-    font-weight: bold;
-}
 .images {
     display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
+    justify-content: space-between;   
 }
 
 .images img {
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: min(350px, 45vw);
     object-fit: contain;
 }
-#eletronicos {
-    display: block; /* Garante que o elemento ocupe toda a largura disponível */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    height: 300px; /* Altura definida */
-    width: 550px; /* Largura definida */
-    margin-top: 20px;
+.eletronicos {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
 }
-
-
+.eletronicos img{
+    height: 400px;
+    width: min(600px, 100vw);
+    object-fit: contain;
+}
 
 footer {
     background-color: #00cc66;
