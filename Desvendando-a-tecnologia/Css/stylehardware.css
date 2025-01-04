@@ -54,14 +54,6 @@ main {
     margin-top: 10px;
 }
 
-.icon {
-    width: 60px; /* Ajuste o tamanho do ícone conforme necessário */
-    position: absolute; /* Posiciona o ícone de forma absoluta */
-    left: 15px; /* Distância do ícone em relação à esquerda do título */
-    top: 7%; /* Alinha o ícone verticalmente ao centro */
-    transform: translateY(-50%); /* Ajusta verticalmente para o centro */
-    height: auto; /* Altura automática para manter a proporção do ícone */
-}
 .final{
     position: fixed;
     bottom: 0;
