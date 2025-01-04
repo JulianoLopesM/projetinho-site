@@ -67,8 +67,9 @@ h3 {
 }
 .images img {
     height: 350px;
-    width: 350px;
+    width: min(350px, 40vw);
     object-fit: contain;
+    
 }
 
 footer {
