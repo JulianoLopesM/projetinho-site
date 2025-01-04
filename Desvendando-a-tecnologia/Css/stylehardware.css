@@ -18,43 +18,62 @@ header {
     text-align: center;
     padding: 20px 0;
 }
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+article {
+    margin-bottom: 20px;
+}
+h1 {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0;
+}
 #icon {
     height: 40px;
     margin-right: 10px;
     vertical-align: middle;
 }
-main {
-    max-width: 800px;
-    max-height: 750px;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
 .title {
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
     margin: 20px 0;
     color: #00cc66;
 }
-#content1, #content2 {
-    text-align: justify;
-    margin: 10px 20px;
+.titleTwo, .titleThree, .titleFour, .titleFive{
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
 }
-.container {
-    text-align: center; /* Centraliza horizontalmente */
+#content1, #content2, #content3, #content4, #content5, #content6 {
+    text-align: justify;
+    margin: 10px 0;
+    font-family: 'Open Sans';
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.container img{
+    height: 400px;
+    width: min(600px, 100vw);
+    object-fit: contain;
     
 }
-.images {
-    width: 380px;
-    height: 240px;
-    display: inline-block; /* Garante que a imagem respeite o alinhamento */
-    margin-top: 10px;
-}
 
-.final{
+
+footer{
     position: fixed;
     bottom: 0;
     right: 0;
@@ -64,5 +83,5 @@ main {
     background-color: #00cc66;
     color: rgb(247, 242, 0);
     width: 100%;
-    
     }
+
