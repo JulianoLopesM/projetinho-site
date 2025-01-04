@@ -69,6 +69,7 @@ h3 {
     height: 350px;
     width: min(350px, 40vw);
     object-fit: contain;
+    border-radius: 8px;
     
 }
 

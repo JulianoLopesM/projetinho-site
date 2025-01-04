@@ -67,8 +67,9 @@ h3 {
 }
 .rede img, .rede2 img {
     height: 400px;
-    width: min(600px, 100vw);
+    width: min(600px, 90vw);
     object-fit: cover;
+    border-radius: 8px;
     
 }
 
