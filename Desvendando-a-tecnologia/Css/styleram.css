@@ -68,9 +68,17 @@ h3 {
 }
 .images img{
     height: 400px;
-    width: min(600px, 90vw);
-    object-fit: cover;
+    width: min(700px, 80vw);
+    object-fit: contain;
     border-radius: 8px;
+}
+@media (max-width: 768px) {
+
+    .images img {
+        height: (300px, 50vw);
+        width: 100%;
+        
+    }
 }
 
 footer {
