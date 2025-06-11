@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/pages.css">
+    <title>Fonte - Desvendando a Tecnologia</title>
+    <style>
+        .power-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .power-card {
+            background: var(--card-background);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .power-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .power-image {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .power-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .certification-section {
+            background: var(--card-background);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+            margin-top: 2rem;
+        }
+
+        .certification-image {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .certification-image img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <i class="fa-solid fa-car-battery"></i>
+                Fonte
+            </h2>
+        </div>
+
+        <section class="content-section">
+            <h3 class="section-title">O que é uma fonte?</h3>
+            <p class="content-text">
+                A fonte de um computador, também conhecida como unidade de alimentação, é um componente essencial responsável por fornecer energia elétrica para todos os componentes internos do sistema, é como se fosse a bateria de um carro.
+            </p>
+        </section>
+
+        <div class="power-features">
+            <div class="power-card">
+                <h3 class="power-title">
+                    <i class="fa-solid fa-bolt"></i>
+                    Como ela funciona nos computadores?
+                </h3>
+                <p class="content-text">
+                    A fonte converte a corrente elétrica alternada da tomada em corrente contínua, que é necessária para alimentar o processador, placas-mãe, discos rígidos, placas gráficas e outros dispositivos.
+                </p>
+                <p class="content-text">
+                    A fonte também distribui energia de forma adequada e segura, garantindo que cada componente receba a voltagem e a amperagem corretas para funcionar de maneira estável.
+                </p>
+                <div class="power-image">
+                    <img src="../../img/fonte6-removebg.png" alt="Fonte de Alimentação">
+                </div>
+            </div>
+
+            <div class="power-card">
+                <h3 class="power-title">
+                    <i class="fa-solid fa-certificate"></i>
+                    Selo 80 Plus
+                </h3>
+                <p class="content-text">
+                    O selo 80 Plus é uma certificação de eficiência energética para fontes de alimentação de computador. Ele indica que a fonte atende a padrões rigorosos de eficiência, convertendo a energia da tomada em eletricidade para o computador de forma mais eficiente, reduzindo o desperdício de energia e o calor gerado. Isso ajuda a economizar energia e reduzir os custos de eletricidade.
+                </p>
+                <div class="certification-image">
+                    <img src="../../img/selo80.jpg" alt="Selo 80 Plus">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>

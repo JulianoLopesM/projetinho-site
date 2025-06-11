@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #00cc66;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#icon {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* NOVO: Container para alinhar título e botão */
+.title-container {
+    position: relative; /* Cria um contexto para o posicionamento do botão */
+    display: flex; /* Habilita o alinhamento flexível */
+    align-items: center; /* Alinha verticalmente o botão e o título */
+    justify-content: center; /* Centraliza o conteúdo (o título, neste caso) */
+    margin: 20px 0; /* Mantém o espaçamento vertical original do título */
+}
+
+/* ALTERADO: A classe do título agora não precisa mais de margem */
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #00cc66;
+    margin: 0; /* A margem agora é controlada pelo container */
+}
+
+
+.titleTwo, .titleThree {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#content1, #content2 {
+    text-align: justify;
+    margin: 10px 20px;
+}
+
+.list {
+    margin: 10px 20px;
+    padding-left: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #00cc66;
+    color: rgb(247, 242, 0);
+    width: 100%;
+}
+
+/* ALTERADO: Posicionamento do botão */
+.btn-voltar {
+    position: absolute; /* Posição absoluta em relação ao 'title-container' */
+    left: 0; /* Alinha o botão totalmente à esquerda do container */
+    background-color: #00994d;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-voltar i {
+    margin-right: 8px;
+}
+
+.btn-voltar:hover {
+    background-color: #007a3d;
+}

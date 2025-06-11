@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/pages.css">
+    <title>Memória RAM - Desvendando a Tecnologia</title>
+    <style>
+        .memory-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .memory-card {
+            background: var(--card-background);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .memory-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .memory-image {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .memory-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <i class="fa-solid fa-memory"></i>
+                Memória RAM
+            </h2>
+        </div>
+
+        <section class="content-section">
+            <h3 class="section-title">O que é a Memória RAM?</h3>
+            <p class="content-text">
+                A memória RAM (Random Access Memory) é um componente crucial em um computador que desempenha um papel fundamental na execução de programas e no armazenamento temporário de dados. Ela é uma forma de memória volátil, o que significa que seu conteúdo é apagado quando o computador é desligado.
+            </p>
+            <div class="memory-image">
+                <img src="../../img/ram7.png" alt="Memória RAM">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="memory-info">
+                <div class="memory-card">
+                    <h3 class="memory-title">
+                        <i class="fa-solid fa-gears"></i>
+                        Como ela funciona?
+                    </h3>
+                    <p class="content-text">
+                        A RAM funciona como uma área de trabalho de curto prazo para o processador e o sistema operacional. Quando você abre um programa, os dados relevantes são transferidos da unidade de armazenamento (como um disco rígido ou SSD) para a RAM. Isso ocorre porque a RAM é muito mais rápida em termos de acesso do que os dispositivos de armazenamento, o que permite que o processador execute tarefas com eficiência.
+                    </p>
+                </div>
+
+                <div class="memory-card">
+                    <h3 class="memory-title">
+                        <i class="fa-solid fa-microchip"></i>
+                        Sistema de Armazenamento e Velocidade
+                    </h3>
+                    <p class="content-text">
+                        Os dados na RAM são armazenados em locais físicos específicos, chamados células de memória, que podem ser acessados aleatoriamente, daí o nome "Random Access Memory". Cada célula possui um endereço único que permite ao processador recuperar rapidamente os dados necessários.
+                    </p>
+                    <p class="content-text">
+                        Os MHz (megahertz) da memória RAM se referem à velocidade com que a memória pode transferir dados para o processador e vice-versa. Quanto maior a frequência em MHz, mais rapidamente a memória pode realizar essas operações de leitura e gravação de dados.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>

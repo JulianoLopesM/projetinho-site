@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/pages.css">
+    <title>Placa de Vídeo - Desvendando a Tecnologia</title>
+    <style>
+        .gpu-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .gpu-card {
+            background: var(--card-background);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .gpu-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feature-highlight {
+            background: var(--card-background);
+            padding: 1rem;
+            border-left: 4px solid var(--primary-color);
+            margin: 1rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        .gpu-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .gpu-brand {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--card-background);
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .gpu-brand img {
+            max-width: 250px;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <img src="../../img/placa-de-video.png" alt="Ícone Placa de Vídeo" style="height: 2rem; margin-right: 0.5rem;">
+                Placa de Vídeo
+            </h2>
+        </div>
+
+        <section class="content-section">
+            <h3 class="section-title">O que é a Placa de Vídeo?</h3>
+            <p class="content-text">
+                A placa de vídeo é uma das peças mais essenciais de um computador ou notebook, porque é ela quem realiza os processos e cálculos necessários para reprodução dos gráficos gerados pelo sistema, basicamente ela gera a imagem no monitor.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Para que serve a Placa de Vídeo e o que tem nela?</h3>
+            <p class="content-text">
+                A placa de vídeo transforma a imagem que vemos na tela por meio de processamento gráfico intensivo, usando um componente-chave chamado GPU (Unidade de Processamento Gráfico). A GPU é projetada para manipular e renderizar gráficos 2D e 3D, e executar cálculos relacionados a vídeo, utilizando a Decodificação de Vídeo.
+            </p>
+
+            <div class="gpu-features">
+                <div class="gpu-card">
+                    <h4 class="gpu-title">
+                        <i class="fa-solid fa-film"></i>
+                        Decodificação de Vídeo
+                    </h4>
+                    <p class="content-text">
+                        Para reproduzir vídeos, a GPU é usada para decodificar streams de vídeo, como H.264 ou H.265. Ela converte esses dados em quadros de vídeo que são exibidos na tela, isso acontece quando você abre um vídeo no youtube.
+                    </p>
+                </div>
+
+                <div class="gpu-card">
+                    <h4 class="gpu-title">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        Renderização 2D
+                    </h4>
+                    <p class="content-text">
+                        Em programas 2D, como navegadores da web e aplicativos de escritório, a GPU é responsável por gerar o texto, imagens e interfaces de usuário de maneira eficiente e rápida.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">E quais placas de vídeo existem?</h3>
+            <p class="content-text">
+                Existem diversas placas de vídeo no mundo, porém as marcas predominantes em vendas e em desempenho, são a Nvidia e a AMD. As placas consideras de entrada para o ano de 2025 é a rx 6600 da AMD, e a gtx 1660 da Nvidia.
+            </p>
+
+            <div class="gpu-comparison">
+                <div class="gpu-brand">
+                    <h4 class="gpu-title">AMD Radeon</h4>
+                    <img src="../../img/radeon1.webp" alt="AMD Radeon RX 6600">
+                </div>
+
+                <div class="gpu-brand">
+                    <h4 class="gpu-title">NVIDIA GeForce</h4>
+                    <img src="../../img/gtx4.png" alt="NVIDIA GTX 1660">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>

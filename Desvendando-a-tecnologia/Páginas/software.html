@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/pages.css">
+    <title>Software - Desvendando a Tecnologia</title>
+    <style>
+        .software-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            align-items: center;
+            justify-items: center;
+        }
+        
+        .software-grid img {
+            max-width: 64px;
+            height: auto;
+            transition: transform 0.2s ease;
+        }
+        
+        .software-grid img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <i class="fa-solid fa-code"></i>
+                Software
+            </h2>
+        </div>
+
+        <section class="content-section">
+            <h3 class="section-title">O que é o software?</h3>
+            <p class="content-text">
+                O software é um conjunto de instruções que, ao serem executadas, fornecem funções e desempenhos desejados. Descrito de forma simples, o software é basicamente um programa de computador. Ele pode ser dividido em duas categorias principais: software de sistema e software de aplicativo.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Software de Sistema</h3>
+            <p class="content-text">
+                O software de sistema consiste em uma coleção de programas que apoiam outros programas, realizando tarefas de gerenciamento, por exemplo. Essa categoria inclui o software operacional e o software utilitário.
+            </p>
+
+            <div class="content-subsection">
+                <h4 class="section-title">Software operacional</h4>
+                <p class="content-text">
+                    Também conhecido como sistema operacional, é o software responsável pelo funcionamento geral dos sistemas de computação. Exemplos incluem Windows, Linux e MacOS.
+                </p>
+                <div class="software-grid">
+                    <img src="../img/windows_104558.png" alt="Windows">
+                    <img src="../img/linux.png" alt="Linux">
+                    <img src="../img/Finder_icon_macOS_Yosemite.png" alt="MacOS">
+                </div>
+            </div>
+
+            <div class="content-subsection">
+                <h4 class="section-title">Software utilitário</h4>
+                <p class="content-text">
+                    Auxilia o software operacional, realizando funções como gerenciamento de dispositivos e proteção contra vírus. Exemplos: Avast, AVG, CCleaner.
+                </p>
+                <div class="software-grid">
+                    <img src="../img/avast_14074.png" alt="Avast">
+                    <img src="../img/avggg.png" alt="AVG">
+                    <img src="../img/ccleaner.png" alt="CCleaner">
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Software Aplicativo</h3>
+            <p class="content-text">
+                Também conhecido como app, é projetado para ajudar o usuário a realizar tarefas específicas, como editar vídeos, criar planilhas ou navegar na internet. Exemplos: Sony Vegas, Excel, Google Chrome.
+            </p>
+            <div class="software-grid">
+                <img src="../img/VEGAS_Pro_icon.png" alt="Sony Vegas">
+                <img src="../img/excel.png" alt="Excel">
+                <img src="../img/chrome.png" alt="Google Chrome">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>

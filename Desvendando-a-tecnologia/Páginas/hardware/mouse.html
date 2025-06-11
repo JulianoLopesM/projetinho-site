@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/pages.css">
+    <title>Mouse - Desvendando a Tecnologia</title>
+    <style>
+        .mouse-content {
+            background: var(--card-background);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+            margin: 2rem 0;
+        }
+
+        .mouse-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .mouse-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--card-background);
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+            transition: transform 0.3s ease;
+        }
+
+        .mouse-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .mouse-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .mouse-title {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .mouse-type {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <i class="fa-solid fa-computer-mouse"></i>
+                Mouse
+            </h2>
+        </div>
+
+        <section class="content-section">
+            <div class="mouse-content">
+                <p class="content-text">
+                    Mouses são dispositivos de entrada que permitem aos usuários interagir com computadores e outros dispositivos eletrônicos. Eles funcionam através de sensores ópticos ou laser que rastreiam o movimento do mouse em uma superfície, convertendo esse movimento em movimento do cursor na tela. Os botões do mouse e a roda de rolagem (scroll) também são usados para clicar, arrastar e rolar, permitindo que os usuários executem uma variedade de ações. Mouses podem ser com fio ou sem fio e vêm em várias formas e tamanhos para atender às preferências dos usuários. Tem a versão com fio USB, ou sem fio bluetooth.
+                </p>
+            </div>
+
+            <div class="mouse-gallery">
+                <div class="mouse-card">
+                    <img src="../../img/razer-basilisk-v3-pro_500x500-removebg-preview.png" alt="Mouse Razer Basilisk">
+                    <h3 class="mouse-title">Razer Basilisk V3 Pro</h3>
+                    <p class="mouse-type">Mouse Gamer Sem Fio</p>
+                </div>
+
+                <div class="mouse-card">
+                    <img src="../../img/multilazer-removebg-preview.png" alt="Mouse Multilaser">
+                    <h3 class="mouse-title">Multilaser</h3>
+                    <p class="mouse-type">Mouse Básico USB</p>
+                </div>
+
+                <div class="mouse-card">
+                    <img src="../../img/logitech-removebg-preview.png" alt="Mouse Logitech">
+                    <h3 class="mouse-title">Logitech</h3>
+                    <p class="mouse-type">Mouse Sem Fio Bluetooth</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/pages.css">
+    <title>Dispositivos - Desvendando a Tecnologia</title>
+    <style>
+        .devices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .device-card {
+            background: var(--card-background);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .device-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .device-image {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .device-image img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .device-image img.network-device {
+            max-width: 200px; /* 20% menor que o tamanho original de 250px */
+        }
+
+        .device-features {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: var(--background-color);
+            border-radius: 0.5rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <i class="fa-brands fa-usb"></i>
+                Dispositivos
+            </h2>
+        </div>
+
+        <div class="devices-grid">
+            <div class="device-card">
+                <h3 class="device-title">
+                    <i class="fa-solid fa-usb-drive"></i>
+                    Pen Drive
+                </h3>
+                <p class="content-text">
+                    Pen drives, também conhecidos como drives USB ou flash drives, são dispositivos de armazenamento portáteis que utilizam memória flash para guardar dados. Eles são pequenos, leves e possuem capacidade de armazenamento que varia de alguns gigabytes a terabytes.
+                </p>
+                <div class="device-features">
+                    <ul class="feature-list">
+                        <li>Portátil e leve</li>
+                        <li>Ideal para transferência de arquivos</li>
+                        <li>Compatível com diversos dispositivos</li>
+                        <li>Capacidade variável de armazenamento</li>
+                    </ul>
+                </div>
+                <div class="device-image">
+                    <img src="../../img/USB-Pen-Drive-PNG-Clipart.png" alt="Pen Drive">
+                </div>
+            </div>
+
+            <div class="device-card">
+                <h3 class="device-title">
+                    <i class="fa-solid fa-wifi"></i>
+                    Modem
+                </h3>
+                <p class="content-text">
+                    Um modem de internet é um dispositivo que converte sinais digitais de um computador em sinais analógicos que podem ser transmitidos através de linhas telefônicas ou cabos de fibra óptica. Ele também faz o inverso, convertendo sinais analógicos recebidos em sinais digitais para que o computador possa entendê-los.
+                </p>
+                <div class="device-features">
+                    <ul class="feature-list">
+                        <li>Converte sinais digitais em analógicos</li>
+                        <li>Essencial para conexão à internet</li>
+                        <li>Compatível com diferentes tipos de conexão</li>
+                        <li>Permite comunicação online</li>
+                    </ul>
+                </div>
+                <div class="device-image">
+                    <img src="../../img/modem.png" alt="Modem" class="network-device">
+                </div>
+            </div>
+
+            <div class="device-card">
+                <h3 class="device-title">
+                    <i class="fa-solid fa-network-wired"></i>
+                    Roteador
+                </h3>
+                <p class="content-text">
+                    Um roteador de internet é um dispositivo que direciona o tráfego de dados entre diferentes dispositivos em uma rede local e a internet. Ele atua como um ponto central para conexões sem fio e com fio, permitindo que vários dispositivos compartilhem uma única conexão de internet.
+                </p>
+                <div class="device-features">
+                    <ul class="feature-list">
+                        <li>Distribui conexão para múltiplos dispositivos</li>
+                        <li>Oferece conexão Wi-Fi e cabeada</li>
+                        <li>Possui recursos de segurança</li>
+                        <li>Ideal para redes domésticas e empresariais</li>
+                    </ul>
+                </div>
+                <div class="device-image">
+                    <img src="../../img/roteador1.png" alt="Roteador" class="network-device">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>

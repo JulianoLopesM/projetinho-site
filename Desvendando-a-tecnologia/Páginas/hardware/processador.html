@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/pages.css">
+    <title>Processador - Desvendando a Tecnologia</title>
+    <style>
+        .processor-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: var(--card-background);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .feature-title {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .processor-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .processor-card {
+            background: var(--card-background);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+            text-align: center;
+        }
+
+        .processor-card img {
+            max-width: 200px;
+            height: auto;
+            margin: 1rem auto;
+            border-radius: 0.5rem;
+        }
+
+        .processor-name {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <i class="fa-solid fa-microchip"></i>
+                Processadores
+            </h2>
+        </div>
+
+        <section class="content-section">
+            <h3 class="section-title">O que são?</h3>
+            <p class="content-text">
+                Um processador é um chip semicondutor que serve como a unidade central de processamento (CPU) de um computador, executando cálculos e controlando operações fundamentais para seu funcionamento. Ele é responsável por interpretar e executar instruções de programas e aplicativos.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Quais são suas funções e o que tem neles?</h3>
+            <div class="processor-features">
+                <div class="feature-card">
+                    <h4 class="feature-title">
+                        <i class="fa-solid fa-cogs"></i>
+                        Função Principal
+                    </h4>
+                    <p class="content-text">
+                        Os processadores executam cálculos e tarefas lógicas em um computador, permitindo que ele realize uma ampla variedade de tarefas, desde cálculos matemáticos até a execução de programas.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h4 class="feature-title">
+                        <i class="fa-solid fa-microchip"></i>
+                        Núcleos
+                    </h4>
+                    <p class="content-text">
+                        Os processadores modernos têm múltiplos núcleos, permitindo a execução de várias tarefas simultaneamente (multitarefa).
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h4 class="feature-title">
+                        <i class="fa-solid fa-tachometer-alt"></i>
+                        Clock Speed
+                    </h4>
+                    <p class="content-text">
+                        Mede a rapidez com que um processador executa instruções. Geralmente é medido em gigahertz (GHz). Processadores potentes chegam de 3 a 4,5 GHz.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h4 class="feature-title">
+                        <i class="fa-solid fa-memory"></i>
+                        Cache
+                    </h4>
+                    <p class="content-text">
+                        Uma memória especial de alta velocidade incorporada no processador que armazena dados frequentemente usados para acesso rápido.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h4 class="feature-title">
+                        <i class="fa-solid fa-plug"></i>
+                        Compatibilidade
+                    </h4>
+                    <p class="content-text">
+                        Os processadores devem ser compatíveis com o soquete da placa-mãe.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Dicas</h3>
+            <p class="content-text">
+                Escolher um processador adequado depende de suas necessidades, desde tarefas simples como navegar na web até jogos intensivos ou computação profissional.
+            </p>
+            <div class="processor-comparison">
+                <div class="processor-card">
+                    <h4 class="processor-name">Intel Core i3</h4>
+                    <img src="../../img/intel3.jpg" alt="Processador Intel Core i3">
+                    <p class="content-text">
+                        Em escolas por exemplo, é comum encontrar processadores i3 da intel nos computadores, é um processador simples que atende os requisitos de navegar na web, escrever relatórios, fazer atividades e assistir vídeos.
+                    </p>
+                </div>
+
+                <div class="processor-card">
+                    <h4 class="processor-name">AMD Ryzen</h4>
+                    <img src="../../img/ryzen2.webp" alt="Processador AMD Ryzen">
+                    <p class="content-text">
+                        Para jogos é mais recomendado processadores mais fortes, pois demandam mais processamento, o indicado são processadores i5 ou i7 da intel, e ryzen 5 ou ryzen 7 da amd.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>

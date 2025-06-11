@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/pages.css">
+    <title>Windows Básico - Desvendando a Tecnologia</title>
+    <style>
+        .windows-feature {
+            margin-bottom: 2rem;
+        }
+        
+        .feature-title {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-list li {
+            position: relative;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        .feature-list li::before {
+            content: '\f0da';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        .shortcut-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .shortcut-list li {
+            background: var(--card-background);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px var(--shadow-color);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .shortcut-list li::before {
+            content: '\f11c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <i class="fa-brands fa-windows"></i>
+                Windows Básico
+            </h2>
+        </div>
+
+        <section class="content-section">
+            <p class="content-text">
+                Aprenda o básico sobre o sistema operacional Windows, suas funções principais e dicas úteis.
+            </p>
+            <h3 class="section-title">O que devo saber sobre o Windows?</h3>
+            <p class="content-text">
+                Como mencionado anteriormente, o Windows é um sistema operacional responsável por usar os componentes do computador para fornecer uma interface amigável e diversas funcionalidades ao usuário.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Coisas úteis</h3>
+
+            <div class="windows-feature">
+                <h4 class="feature-title">
+                    <i class="fa-solid fa-desktop"></i>
+                    Área de Trabalho
+                </h4>
+                <ul class="feature-list">
+                    <li>A Área de Trabalho é a tela principal do Windows.</li>
+                    <li>Você pode criar atalhos para programas e arquivos nesta área.</li>
+                </ul>
+                <div class="content-image">
+                    <img src="../img/area.jpg" alt="Área de Trabalho">
+                </div>
+            </div>
+
+            <div class="windows-feature">
+                <h4 class="feature-title">
+                    <i class="fa-solid fa-bars"></i>
+                    Barra de Tarefas
+                </h4>
+                <ul class="feature-list">
+                    <li>A Barra de Tarefas está localizada na parte inferior da tela.</li>
+                    <li>Ela contém o botão "Iniciar", que abre o menu principal.</li>
+                    <li>Ícones de programas abertos e atalhos também são exibidos na Barra de Tarefas.</li>
+                </ul>
+                <div class="content-image">
+                    <img src="../img/barra.jpg" alt="Barra de Tarefas">
+                </div>
+            </div>
+
+            <div class="windows-feature">
+                <h4 class="feature-title">
+                    <i class="fa-brands fa-windows"></i>
+                    Menu Iniciar
+                </h4>
+                <ul class="feature-list">
+                    <li>O menu Iniciar é o ponto de partida para acessar aplicativos, configurações e arquivos.</li>
+                    <li>Você pode pesquisar programas digitando na caixa de pesquisa do menu.</li>
+                </ul>
+                <div class="content-image">
+                    <img src="../img/menuuu.png" alt="Menu Iniciar">
+                </div>
+            </div>
+
+            <div class="windows-feature">
+                <h4 class="feature-title">
+                    <i class="fa-solid fa-folder-open"></i>
+                    Explorador de Arquivos
+                </h4>
+                <ul class="feature-list">
+                    <li>O Explorador de Arquivos é usado para gerenciar seus arquivos e pastas.</li>
+                    <li>Você pode abri-lo clicando no ícone da pasta na Barra de Tarefas ou no menu Iniciar.</li>
+                </ul>
+                <div class="content-image">
+                    <img src="../img/explorador.png" alt="Explorador de Arquivos">
+                </div>
+            </div>
+
+            <div class="windows-feature">
+                <h4 class="feature-title">
+                    <i class="fa-solid fa-list-check"></i>
+                    Gerenciador de Tarefas
+                </h4>
+                <ul class="feature-list">
+                    <li>O Gerenciador de Tarefas é acessado pressionando Ctrl + Shift + Esc.</li>
+                    <li>Ele permite visualizar e encerrar processos e aplicativos em execução.</li>
+                </ul>
+                <div class="content-image">
+                    <img src="../img/gerenciador.webp" alt="Gerenciador de Tarefas">
+                </div>
+            </div>
+
+            <div class="windows-feature">
+                <h4 class="feature-title">
+                    <i class="fa-solid fa-gear"></i>
+                    Configurações do Sistema
+                </h4>
+                <ul class="feature-list">
+                    <li>Você pode acessar as configurações do sistema pressionando as teclas Windows + I.</li>
+                    <li>Isso permite personalizar várias configurações, como papel de parede, rede, dispositivos, entre outros.</li>
+                </ul>
+                <div class="content-image">
+                    <img src="../img/configuração2.png" alt="Configurações do Sistema">
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Comandos úteis que podem ajudar</h3>
+            <ul class="shortcut-list">
+                <li>Ctrl + C: Copia o texto ou arquivo selecionado</li>
+                <li>Ctrl + V: Cola o texto ou arquivo copiado ou cortado</li>
+                <li>Ctrl + X: Corta o texto ou arquivo selecionado</li>
+                <li>Ctrl + Z: Desfaz a última ação</li>
+                <li>Ctrl + Y: Refaz a última ação desfeita</li>
+                <li>Ctrl + S: Salva o arquivo atual</li>
+                <li>Ctrl + P: Abre a opção de impressão</li>
+                <li>Ctrl + F: Abre a caixa de pesquisa</li>
+                <li>Alt + Tab: Alterna entre aplicativos</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>

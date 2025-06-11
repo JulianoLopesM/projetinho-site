@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/pages.css">
+    <title>Segurança - Desvendando a Tecnologia</title>
+    <style>
+        .security-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .security-list li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        
+        .security-list li::before {
+            content: '\f023';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <i class="fa-solid fa-lock"></i>
+                Segurança
+            </h2>
+        </div>
+
+        <section class="content-section">
+            <h3 class="section-title">Cuidados que você deve ter na internet</h3>
+            <ul class="security-list">
+                <li>Mantenha seu sistema operacional e software atualizados</li>
+                <li>Use senhas fortes: no mínimo 10 caracteres, com símbolos especiais</li>
+                <li>Ative a autenticação de dois fatores: Use o aplicativo google authenticator, não use o número de celular</li>
+                <li>Instale um antivírus confiável</li>
+                <li>Cuidado com e-mails e anexos suspeitos</li>
+                <li>Evite downloads de fontes não confiáveis: Se você não conhece o site, não baixe nada nele</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">O que pode acontecer se não nos protegermos?</h3>
+            <p class="content-text">
+                Roubo de informações pessoais: Senhas fracas ou negligência na segurança podem resultar em roubo de dados confidenciais, como informações bancárias ou de identificação pessoal. Invasões de privacidade: Configurações inadequadas de privacidade podem permitir que terceiros acessem suas informações pessoais sem sua permissão. Interferência na funcionalidade do computador: Vírus e malware podem prejudicar o desempenho do seu computador e torná-lo inutilizável.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Tempo que um hacker demora para descobrir a sua senha</h3>
+            <p class="content-text">
+                Muito cuidado com a engenharia social, engenharia social se baseia em conversar com alguém para pegar intimidade e ganhar confiança, por mais que a pessoa estranha que conversa com você pareça legal, não revele suas informações, não diga seu nome completo, não diga datas de aniversário e nem diga o nome do seu animal de estimação, datas e nomes de animais são a senha das maiorias das pessoas, é assim que descobrem sua senha, jamais revelem nada e usem uma senha forte com caracteres especiais.
+            </p>
+            <div class="content-image">
+                <img src="../img/testesSEGURANCA.png" alt="Tempo para descobrir senhas" style="max-width: 100%; border-radius: 0.5rem;">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>

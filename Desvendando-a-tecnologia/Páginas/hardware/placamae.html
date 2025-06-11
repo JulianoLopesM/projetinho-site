@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/pages.css">
+    <title>Placa Mãe - Desvendando a Tecnologia</title>
+    <style>
+        .hardware-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+        
+        .hardware-list li {
+            background: var(--card-background);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px var(--shadow-color);
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .hardware-list li::before {
+            content: '\f2db';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0.75rem;
+            color: var(--primary-color);
+        }
+
+        .socket-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .socket-card {
+            background: var(--card-background);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .socket-card img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .socket-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <img src="../../img/motherboard.png" alt="Ícone Placa Mãe" style="height: 2rem; margin-right: 0.5rem;">
+                Placa Mãe
+            </h2>
+        </div>
+
+        <section class="content-section">
+            <h3 class="section-title">Para que serve?</h3>
+            <p class="content-text">
+                A placa-mãe, também conhecida como motherboard, é uma das peças mais importantes em um computador. A placa-mãe é o ponto central de conexão para todos os principais componentes, como processador, memória RAM, placas de vídeo, discos rígidos e dispositivos periféricos.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">O que tem nela?</h3>
+            <p class="content-text">
+                A placa-mãe contém um chip de BIOS (Sistema Básico de Entrada/Saída) que controla inicialização, configurações de hardware e comunicação entre os componentes.
+            </p>
+            <ul class="hardware-list">
+                <li>Slots de Expansão: Ela possui slots que permitem adicionar placas de expansão, como placas de vídeo dedicadas, placas de som ou placas de rede.</li>
+                <li>Portas e Conexões: A placa-mãe oferece várias portas e conexões, incluindo USB, áudio, Ethernet, HDMI, VGA, entre outras.</li>
+                <li>Soquete do Processador: O processador se encaixa em um soquete específico na placa-mãe, determinando o tipo e modelo compatível.</li>
+                <li>Diferentes Formas: As placas-mãe vêm em diferentes fatores de forma (ATX, microATX, mini-ITX), que afetam o tamanho do gabinete que você pode usar.</li>
+            </ul>
+            <div class="content-image">
+                <img src="../../img/Placa_Mae.JPG" alt="Placa Mãe">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Cuidado</h3>
+            <p class="content-text">
+                A escolha da placa-mãe certa é crucial, pois ela afeta a compatibilidade, desempenho e expansibilidade do seu sistema de computador. Certifique-se de escolher uma placa-mãe que atenda às suas necessidades específicas e que seja compatível com os componentes que pretende usar.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">O que é o socket?</h3>
+            <p class="content-text">
+                Os sockets são interfaces na placa-mãe onde o processador (CPU) se encaixa. A AMD e a Intel têm suas próprias séries de sockets.
+            </p>
+
+            <div class="socket-grid">
+                <div class="socket-card">
+                    <h4 class="socket-title">AMD</h4>
+                    <p class="content-text">
+                        Os sockets mais comuns para processadores AMD incluem o AM4 e o TR4 (Threadripper). Cada socket tem um número específico de pinos e é compatível com determinadas famílias de processadores AMD.
+                    </p>
+                    <img src="../../img/placamaeamd.png" alt="Socket AMD">
+                </div>
+
+                <div class="socket-card">
+                    <h4 class="socket-title">Intel</h4>
+                    <p class="content-text">
+                        A Intel usa vários sockets, como LGA 1200 e LGA 2066 para desktops e LGA 3647 para servidores. Assim como a AMD, cada socket Intel é projetado para acomodar diferentes tipos de processadores. É importante escolher uma placa-mãe com o socket correto para o processador que você pretende usar, pois eles não são compatíveis entre si. Certifique-se de verificar as especificações do processador e da placa-mãe para garantir que eles sejam compatíveis em termos de socket e chipset.
+                    </p>
+                    <img src="../../img/placamaeintel-removebg-preview.png" alt="Socket Intel">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>

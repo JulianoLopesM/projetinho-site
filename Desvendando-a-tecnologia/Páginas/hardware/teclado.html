@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/pages.css">
+    <title>Teclado - Desvendando a Tecnologia</title>
+    <style>
+        .keyboard-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .keyboard-card {
+            background: var(--card-background);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .keyboard-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .keyboard-image {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .keyboard-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .keyboard-features {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: var(--background-color);
+            border-radius: 0.5rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <i class="fa-regular fa-keyboard"></i>
+                Teclado
+            </h2>
+        </div>
+
+        <section class="content-section">
+            <p class="content-text">
+                Os teclados de computador são dispositivos de entrada que permitem aos usuários inserir texto e comandos em um computador. Eles consistem em um conjunto de teclas que representam letras, números, símbolos e funções específicas. Os teclados podem ser de diferentes tipos, como mecânicos ou de membrana.
+            </p>
+        </section>
+
+        <div class="keyboard-types">
+            <div class="keyboard-card">
+                <h3 class="keyboard-title">
+                    <i class="fa-solid fa-gear"></i>
+                    Teclados Mecânicos
+                </h3>
+                <p class="content-text">
+                    O teclado mecânico tem interruptores individuais embaixo de cada tecla que são operados por mola com pequenos contatos de metal que fecham o circuito quando você pressiona.
+                </p>
+                <div class="keyboard-features">
+                    <ul class="feature-list">
+                        <li>Durabilidade superior ao teclado de membrana</li>
+                        <li>Maior velocidade e precisão ao executar comandos</li>
+                        <li>Ideal para jogos e digitação</li>
+                        <li>Mais confortável para digitação prolongada</li>
+                        <li>Preço a partir de R$ 200</li>
+                    </ul>
+                </div>
+                <div class="keyboard-image">
+                    <img src="../../img/hyperx-removebg-preview.png" alt="Teclado Mecânico HyperX">
+                </div>
+            </div>
+
+            <div class="keyboard-card">
+                <h3 class="keyboard-title">
+                    <i class="fa-solid fa-keyboard"></i>
+                    Teclado de Membrana
+                </h3>
+                <p class="content-text">
+                    São os teclados mais populares, encontrados em escritórios, escolas, hospitais e etc. O acionamento das teclas é feito através de uma membrana de três camadas, feita de silicone e borracha, que fica entre a placa de circuito e as teclas, a responsável por enviar os comandos do usuário.
+                </p>
+                <div class="keyboard-features">
+                    <ul class="feature-list">
+                        <li>Mais econômico (a partir de R$ 20)</li>
+                        <li>Amplamente utilizado em ambientes profissionais</li>
+                        <li>Silencioso durante o uso</li>
+                        <li>Menor velocidade e precisão em jogos</li>
+                        <li>Vida útil mais curta</li>
+                    </ul>
+                </div>
+                <div class="keyboard-image">
+                    <img src="../../img/membrana-removebg-preview.png" alt="Teclado de Membrana">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>

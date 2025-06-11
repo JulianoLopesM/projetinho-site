@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/pages.css">
+    <title>HD - Desvendando a Tecnologia</title>
+    <style>
+        .storage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .storage-card {
+            background: var(--card-background);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .storage-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .storage-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .storage-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px var(--shadow-color);
+        }
+
+        .ssd-image {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .ssd-image img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="../../img/pc.png" alt="Ícone" id="icon">
+                <h1>Desvendando a Tecnologia</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <button class="btn-voltar" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </button>
+            <h2 class="page-title">
+                <i class="fa-regular fa-hard-drive"></i>
+                Armazenamento
+            </h2>
+        </div>
+
+        <div class="storage-grid">
+            <div class="storage-card">
+                <h3 class="storage-title">
+                    <i class="fa-solid fa-hdd"></i>
+                    O que é um HD?
+                </h3>
+                <p class="content-text">
+                    Um disco rígido, comumente conhecido como HD (Hard Disk), é um componente fundamental em sistemas de armazenamento de computadores. Ele é uma unidade de armazenamento que armazena dados digitalmente em discos magnéticos. O funcionamento de um HD é baseado em princípios físicos e mecânicos.
+                </p>
+                <h4 class="storage-title">
+                    <i class="fa-solid fa-gears"></i>
+                    Como funciona?
+                </h4>
+                <p class="content-text">
+                    O HD é composto por discos magnéticos revestidos, nos quais os dados são organizados em trilhas, setores e cilindros. Uma cabeça de leitura/gravação, montada em um braço móvel, lê e grava dados nesses discos. O HD gira constantemente a alta velocidade, criando um fluxo de ar que mantém as cabeças próximas à superfície dos discos. Quando dados são armazenados ou acessados, as cabeças movem-se para a posição correta e, em seguida, leem ou escrevem os dados na superfície magnética do disco.
+                </p>
+                <div class="storage-images">
+                    <img src="../../img/HD.png" alt="HD Interno">
+                    <img src="../../img/hd2.png" alt="HD Estrutura">
+                </div>
+            </div>
+
+            <div class="storage-card">
+                <h3 class="storage-title">
+                    <i class="fa-solid fa-solid-state-drive"></i>
+                    O que é um SSD?
+                </h3>
+                <p class="content-text">
+                    Um SSD, ou Solid-State Drive, é um dispositivo de armazenamento de dados que utiliza memória flash para armazenar informações digitalmente. Diferentemente dos discos rígidos tradicionais (HDs), que usam discos magnéticos giratórios, os SSDs não possuem partes móveis. Em vez disso, eles armazenam dados em microchips de memória NAND flash, semelhantes aos utilizados em unidades USB. Eles possuem uma velocidade no mínimo 10 vezes superior a de um HD convencional.
+                </p>
+                <div class="ssd-image">
+                    <img src="../../img/ssd.png" alt="SSD">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Desvendando a Tecnologia</p>
+        </div>
+    </footer>
+</body>
+</html>
