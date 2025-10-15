@@ -1,17 +1,51 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Dark Mode Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    const themeIcon = themeToggle?.querySelector('i');
+
+    // Verificar preferência salva
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        if (themeIcon) {
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        }
+    }
+
+    // Toggle dark mode
+    themeToggle?.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+            if (themeIcon) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            }
+        } else {
+            localStorage.setItem('theme', 'light');
+            if (themeIcon) {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        }
+    });
+
     // Gerenciamento do menu expansível de hardware
     const expandables = document.querySelectorAll('.expandable');
     
     expandables.forEach(expandable => {
         const toggleButton = expandable.querySelector('.toggle-button');
         
-        toggleButton.addEventListener('click', (e) => {
+        toggleButton?.addEventListener('click', (e) => {
             e.preventDefault();
             expandable.classList.toggle('active');
             
             // Animação suave do ícone
             const icon = toggleButton.querySelector('i');
-            icon.style.transition = 'transform 0.3s ease';
+            if (icon) icon.style.transition = 'transform 0.3s ease';
         });
     });
 

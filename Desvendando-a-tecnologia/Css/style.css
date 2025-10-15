@@ -11,6 +11,21 @@
     --card-background: #ffffff;
     --hover-color: #3b82f6;
     --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-color: #e2e8f0;
+    --sub-hover-bg: #f1f5f9;
+}
+
+/* Dark mode colors */
+body.dark-mode {
+    --primary-color: #3b82f6;
+    --secondary-color: #2563eb;
+    --background-color: #0f172a;
+    --text-color: #e2e8f0;
+    --card-background: #1e293b;
+    --hover-color: #60a5fa;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --border-color: #334155;
+    --sub-hover-bg: #334155;
 }
 
 /* Reset básico */
@@ -28,6 +43,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar {
@@ -49,6 +65,38 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.theme-toggle {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.2rem;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
 }
 
 .logo h1 {
@@ -119,7 +167,7 @@ body {
     border-radius: 0.75rem;
     padding: 1.5rem;
     box-shadow: 0 4px 6px var(--shadow-color);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
 }
 
 .guide-item:hover {
@@ -175,7 +223,7 @@ body {
     display: none;
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid var(--border-color);
 }
 
 .expandable.active .sub-topics {
@@ -191,7 +239,7 @@ body {
 }
 
 .sub-topics a:hover {
-    background-color: #f1f5f9;
+    background-color: var(--sub-hover-bg);
 }
 
 footer {
